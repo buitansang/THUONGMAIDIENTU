@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="CustomFooterView" customModule="THUONGMAIDIENTU" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Je3-cC-rbN">
+                    <rect key="frame" x="150" y="15" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="hGH-gD-c47"/>
+                        <constraint firstAttribute="width" constant="20" id="iyc-V3-628"/>
+                    </constraints>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="Je3-cC-rbN" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="150" id="9za-0G-uSt"/>
+                <constraint firstItem="Je3-cC-rbN" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" constant="15" id="Ape-Uv-sYM"/>
+                <constraint firstAttribute="trailing" secondItem="Je3-cC-rbN" secondAttribute="trailing" constant="150" id="tVP-hH-RSy"/>
+                <constraint firstAttribute="bottom" secondItem="Je3-cC-rbN" secondAttribute="bottom" constant="15" id="uok-bO-tzA"/>
+            </constraints>
+            <connections>
+                <outlet property="refreshControlIndicator" destination="Je3-cC-rbN" id="gUd-hh-6gu"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="75"/>
+        </collectionReusableView>
+    </objects>
+</document>

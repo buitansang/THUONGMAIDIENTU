@@ -1,0 +1,6 @@
+framework module Pods_THUONGMAIDIENTU {
+  umbrella header "Pods-THUONGMAIDIENTU-umbrella.h"
+
+  export *
+  module * { export * }
+}
